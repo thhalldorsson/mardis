@@ -1,0 +1,6 @@
+"0","sum <- df %>%
+"
+"2","Error: unexpected symbol in:
+""  summarise(N = n())
+sum""
+"

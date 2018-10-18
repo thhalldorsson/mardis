@@ -1,0 +1,29 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1539884001090.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "E2B20EBE",
+    "lastKnownWriteTime" : 6,
+    "last_content_update" : 1539884001090,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "cacheKey" : "483C06D2",
+        "caption" : "diaper",
+        "contentUrl" : "grid_resource/gridviewer.html?env=&obj=diaper&cache_key=483C06D2",
+        "displayedObservations" : 363,
+        "environment" : "",
+        "object" : "diaper",
+        "preview" : 0,
+        "totalObservations" : 363,
+        "variables" : 9
+    },
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_dataframe"
+}

@@ -1,0 +1,35 @@
+---
+title: "Mardís Mía Þráinsdóttir"
+author: "Þráinn Halldór Halldórsson"
+date: "10/18/2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+```
+
+```{r read csv}
+df <- read_csv("data.csv") %>%
+  map_df(str_to_upper)
+#rename col names
+```
+
+
+```{r summarising, echo=FALSE}
+sum <- df %>%
+  group_by(Activity) %>%
+  summarise(N = n())
+```
+
+```{r diaper, echo=FALSE}
+diaper <- df %>%
+  filter(Activity == "DIAPER") %>% 
+  select(timestamp = "Date and Time", diaper = "Activity") %>%
+  replace("diaper", 1)
+
+ggplot(diaper, aes(timestamp, diaper)) +
+  geom_line()
+#add dummies between time intervals (1 hr)
+```

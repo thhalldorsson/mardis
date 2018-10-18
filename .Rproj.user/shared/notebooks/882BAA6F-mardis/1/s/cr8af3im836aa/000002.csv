@@ -1,0 +1,16 @@
+"0","df <- read_csv(""data.csv"") %>%
+  map_df(str_to_upper)
+"
+"2","Parsed with column specification:
+cols(
+  `Date and Time` = col_character(),
+  `End Time` = col_character(),
+  `Duration (min)` = col_integer(),
+  Activity = col_character(),
+  Quantity = col_double(),
+  `Extra data` = col_character(),
+  Text = col_character(),
+  Notes = col_character(),
+  Caregiver = col_character()
+)
+"
